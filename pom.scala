@@ -28,7 +28,37 @@ ScalaModel(
   ),
   profiles = Seq(
     Profile(id = "parent", modules = Seq("blended-parent", "blended-karaf-parent", "blended-karaf-branding")),
-    Profile(id = "build", modules = Seq("blended-karaf-installer", "blended-activemq-brokerstarter", "blended-container-context", "blended-container-id", "blended-container-registry", "blended-util", "blended-jmx", "blended-camel-utils", "blended-testsupport", "blended-karaf-features", "blended-karaf-branding", "blended-modules", "blended-akka", "blended-mgmt-agent", "blended-mgmt-rest", "blended-spray-api", "blended-spray", "blended-neo4j-api", "blended-persistence", "blended-jolokia", "blended-itestsupport", "blended-samples")),
+    Profile(id = "build", modules = Seq(
+      "blended-karaf-installer",
+
+      "blended-activemq-brokerstarter",
+      "blended-container-context",
+      "blended-container-id",
+      "blended-container-registry",
+      "blended-util",
+      "blended-jmx",
+      "blended-camel-utils",
+
+      "blended-testsupport",
+
+      "blended-karaf-features",
+      "blended-karaf-branding",
+
+      "blended-modules",
+      "blended-akka",
+      "blended-mgmt-agent",
+      "blended-mgmt-rest",
+
+      "blended-spray-api",
+      "blended-spray",
+
+      "blended-neo4j-api",
+      "blended-persistence",
+
+      "blended-jolokia",
+      "blended-itestsupport",
+
+      "blended-samples")),
     Profile(id = "testing", modules = Seq("blended-testing")),
     Profile(id = "assembly", modules = Seq("blended-karaf-demo")),
     Profile(id = "itest", modules = Seq("blended-itestsupport", "blended-akka-itest")),
