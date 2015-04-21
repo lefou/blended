@@ -1,9 +1,7 @@
 import org.sonatype.maven.polyglot.scala.model._
 import scala.collection.immutable._
 
-implicit val scalaVersion = ScalaVersion("2.10.2")
-
-ScalaModel(
+Model(
   gav = "de.wayofquality.blended" % "blended-reactor" % "1.1.2-SNAPSHOT",
   modelVersion = "4.0.0",
   packaging = "pom",
